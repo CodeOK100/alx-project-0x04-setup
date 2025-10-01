@@ -1,14 +1,15 @@
 import Layout from "@/components/layouts/Layout";
-import { CounterProvider } from "@/context/CountContext";
 import "@/styles/globals.css";
 import type {AppProps} from "next/app";
+import store from "@/store/store";
+import { Provider } from "react-redux";
 
 export default function App({Component, pageProps}: AppProps) {
   return (
-    <CounterProvider>
+    <Provider store={store} >
       <Layout>
-        <Component {...pageProps} />
+        <Component {...pageProps}/>
       </Layout>
-    </CounterProvider>
+    </Provider>
   );
 }
