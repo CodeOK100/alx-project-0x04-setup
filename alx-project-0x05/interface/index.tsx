@@ -15,7 +15,7 @@ export interface LayoutProps {
   children: ReactNode;
 }
 
-export interface CounterContextProps {
+export interface CountContextProps {
   count: number;
   increment: () => void;
   decrement: () => void;

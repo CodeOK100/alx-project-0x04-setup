@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout";
-import { CounterProvider } from "@/context/CounterContext";
+import { CounterProvider } from "@/context/CountContext";
 import "@/styles/globals.css";
 import type {AppProps} from "next/app";
 

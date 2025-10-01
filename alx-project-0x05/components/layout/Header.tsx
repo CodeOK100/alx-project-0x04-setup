@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Button from "@/components/common/Button";
 import { usePathname } from "next/navigation";
-import {useCounter} from "@/context/CounterContext";
+import {useCounter} from "@/context/CountContext";
 
 const Header: React.FC = () => {
 
