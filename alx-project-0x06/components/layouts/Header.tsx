@@ -2,13 +2,13 @@ import Link from "next/link";
 import Button from "@/components/common/Button";
 import { usePathname } from "next/navigation";
 import { RootState } from "@/store/store";
-import {useSelector} from "react-redux";
+import {useselector} from "react-redux";
 
 
 const Header: React.FC = () => {
 
   const pathname = usePathname();
-  const count = useSelector((state: RootState) => state.counter.value);
+  const count = useselector((state: RootState) => state.counter.value);
 
   return (
     <header className="fixed w-full bg-white shadow-md">
