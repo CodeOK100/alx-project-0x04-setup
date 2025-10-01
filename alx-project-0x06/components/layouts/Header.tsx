@@ -2,7 +2,7 @@ import Link from "next/link";
 import Button from "@/components/common/Button";
 import { usePathname } from "next/navigation";
 import { RootState } from "@/store/store";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 
 const Header: React.FC = () => {
